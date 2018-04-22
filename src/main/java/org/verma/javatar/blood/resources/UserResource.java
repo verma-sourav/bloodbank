@@ -28,7 +28,7 @@ public class UserResource {
 		public UserResource(){
 			try {
 				Class.forName("org.postgresql.Driver");
-				con = DriverManager.getConnection("jdbc:postgres://chzopxklezjqom:66e3d9afb927c511e9e5b55e5d9d7631eb051edaa58c708139c70eaffb422731@ec2-54-225-200-15.compute-1.amazonaws.com:5432/d1kvh0214fuo42", "chzopxklezjqom", "66e3d9afb927c511e9e5b55e5d9d7631eb051edaa58c708139c70eaffb422731");
+				con = DriverManager.getConnection("jdbc:postgresql://ec2-54-225-200-15.compute-1.amazonaws.com:5432/d1kvh0214fuo42", "chzopxklezjqom", "66e3d9afb927c511e9e5b55e5d9d7631eb051edaa58c708139c70eaffb422731");
 			} catch(Exception ex) {
 				System.out.println(ex.getMessage());
 			}	
