@@ -28,7 +28,7 @@ public class UserResource {
 		public UserResource(){
 			try {
 				Class.forName("org.postgresql.Driver");
-				con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "");
+				con = DriverManager.getConnection("jdbc:postgresql://ec2-54-225-200-15.compute-1.amazonaws.com/d1kvh0214fuo42", "chzopxklezjqom", "66e3d9afb927c511e9e5b55e5d9d7631eb051edaa58c708139c70eaffb422731");
 			} catch(Exception ex) {
 				System.out.println(ex.getMessage());
 			}	
